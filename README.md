@@ -5,10 +5,10 @@ SimpleCalc is an Android application developed to practice systematic debugging 
 ## Screenshots
 
 ### App Startup
-![App Startup](screenshots/app_screenshot.png)
+<img src="screenshots/app_screenshot.png" width="300" alt="App Startup" />
 
 ### Calculation Result (55 + 25 = 80.0)
-![Calculation Result](screenshots/app_calc_screenshot.png)
+<img src="screenshots/app_calc_screenshot.png" width="300" alt="Calculation Result" />
 
 ## Features & Debugging Topics Covered
 - **Breakpoints & Conditional Breakpoints**

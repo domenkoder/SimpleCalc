@@ -35,7 +35,7 @@ Namen vaje je bil s pomočjo razhroščevalnika (Debugger) v Android Studiu sist
 | Ukaz | Kaj se zgodi? | Metoda / Opažanje |
 | :--- | :--- | :--- |
 | **Step Over (`F8`)** | Izvede trenutno vrstico kode in se pomakne na naslednjo. Ne vstopi v klicano metodo. | Uporabno za preskok klica pomožnih metod (npr. `getOperand()`), če nas notranjost ne zanima. |
-| **Step Into (`F7`)** | Vstopi v notranjost klicane metode. | Omogoča sledenje izvajanju znotraj klicane metode (npr. vstop v `getOperand()` ali `Calculator.add()`). |
+| **Step Into (`F7`)** | Vstopi v notranjost klicane metodo. | Omogoča sledenje izvajanju znotraj klicane metode (npr. vstop v `getOperand()` ali `Calculator.add()`). |
 | **Step Out (`Shift+F8`)** | Zaključi izvajanje trenutne metode do konca in se vrne v klicajočo metodo. | Omogoča hiter izhod iz trenutne metode nazaj v `compute()`. |
 | **Resume (`F9`)** | Nadaljuje izvajanje programa brez ustavljanja do naslednje prekinitvene točke ali konca. | Program teče normalno do nove prekinitve. |
 
@@ -91,10 +91,10 @@ Namen vaje je bil s pomočjo razhroščevalnika (Debugger) v Android Studiu sist
 Spodaj so priloženi posnetki zaslona neposredno iz vaše povezane naprave med zagonom in testiranjem aplikacije SimpleCalc:
 
 ### Dokazilo 1 & 2: Zagon aplikacije in začetni vmesnik
-![Zaslon aplikacije SimpleCalc ob zagonu](screenshots/app_screenshot.png)
+<img src="screenshots/app_screenshot.png" width="300" alt="Zaslon aplikacije SimpleCalc ob zagonu" />
 
 ### Dokazilo 3 & 4: Izveden izračun v aplikaciji (npr. vnos 55 in 25, ADD)
-![Izveden izračun v aplikaciji SimpleCalc](screenshots/app_calc_screenshot.png)
+<img src="screenshots/app_calc_screenshot.png" width="300" alt="Izveden izračun v aplikaciji SimpleCalc" />
 
 ---
 
