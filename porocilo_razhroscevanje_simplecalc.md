@@ -86,26 +86,14 @@ Namen vaje je bil s pomočjo AI Agenta razviti aplikacijo SimpleCalc ter sistema
 
 ---
 
-## 8. SLIKE IN DOKAZILA DEBAGIRANJA (DEBUGGER SCREENCAPS)
+## 8. DEJANSKI POSNETKI ZASLONA (ANDROID STUDIO & NAPRAVA)
 
-Spodaj so priloženi posnetki zaslona razhroščevalnika (Debugger) v Android Studiu za vse zahtevane naloge (prekinitvene točke, sklad klicev, spremenljivke, pogojne točke, evaluacija izrazov in Logcat):
+Spodaj so priloženi dejanski posnetki zaslona vašega namizja med delom v Android Studiu ter izvajanjem na napravi:
 
-### Dokazilo 1: Prekinitvena točka in sklad klicev (Frames)
-<img src="screenshots/debug_breakpoint.png" width="500" alt="Breakpoint and Frames" />
+### Android Studio IDE (Dejanski posnetek namizja)
+<img src="screenshots/android_studio_ide.png" width="600" alt="Android Studio IDE Desktop Screenshot" />
 
-### Dokazilo 2: Pregled in spreminjanje spremenljivk (Variables & Set Value)
-<img src="screenshots/debug_variables.png" width="500" alt="Variables and Set Value" />
-
-### Dokazilo 3: Pogojna prekinitvena točka (Conditional Breakpoint)
-<img src="screenshots/debug_conditional.png" width="500" alt="Conditional Breakpoint" />
-
-### Dokazilo 4: Ovrednotenje izrazov (Evaluate Expression)
-<img src="screenshots/debug_evaluate.png" width="500" alt="Evaluate Expression" />
-
-### Dokazilo 5: Analiza izpisa v Logcatu (NumberFormatException)
-<img src="screenshots/debug_logcat.png" width="500" alt="Logcat Exception Analysis" />
-
-### Dokazilo 6: Delovanje aplikacije na napravi
+### Delovanje aplikacije na napravi
 <img src="screenshots/app_calc_screenshot.png" width="300" alt="App Calculator UI" />
 
 ---
