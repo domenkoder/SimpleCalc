@@ -1,0 +1,44 @@
+ODGOVORI NA VPRAŠANJA IN NALOGE IZ UČNEGA LISTA: RAZHROŠČEVANJE V ANDROID STUDIU (SimpleCalc)
+
+--------------------------------------------------------------------------------
+1. VPRAŠANJE V 1. POGLAVJU (str. 2):
+--------------------------------------------------------------------------------
+Vprašanje: Katera metoda pretvori besedilo iz EditText v število? Kje bi lahko nastala izjema pri praznem polju?
+Odgovor:
+Besedilo iz gradnika EditText v število pretvori metoda Double.valueOf(operandText) (oziroma Double.parseDouble(operandText)).
+Izjema (NumberFormatException) nastane v metodi getOperand(), ko je vnosno polje prazno (ali vsebuje neveljavne znake, npr. črke), saj metoda Double.valueOf("") ne more pretvoriti praznega niza v število.
+
+
+--------------------------------------------------------------------------------
+2. VPRAŠANJA ZA PREVERJANJE ZNANJA (str. 4–5):
+--------------------------------------------------------------------------------
+
+1. Kakšna je razlika med običajnim zagonom (Run) in zagonom v načinu Debug?
+- Odgovor: Običajni zagon (Run) zažene aplikacijo v običajnem produkcijskem načinu. Zagon v načinu Debug pa poveže razhroščevalnik (Debugger), ki omogoča nadzor nad izvajanjem programa, ustavljanje na prekinitvenih točkah, pregledovanje spremenljivk, izvajanje kode po korakih in analizo sklada klicev.
+
+2. Kaj je prekinitvena točka in v katerem delu urejevalnika jo nastavite?
+- Odgovor: Prekinitvena točka (Breakpoint) je točka v kodi, kjer razhroščevalnik začasno ustavi izvajanje aplikacije, ko program doseže to vrstico. Nastavimo jo v levem robu (gutter) urejevalnika kode poleg številke vrstice.
+
+3. Kateri ukaz uporabite, če želite vstopiti v getOperand(), in kateri, če je ne želite odpreti?
+- Odgovor: Za vstop v metodo uporabimo ukaz Step Into (F7). Če metode ne želimo odpreti in želimo klic izvesti kot en korak, uporabimo Step Over (F8).
+
+4. Kaj prikazuje Frames in kako vam pomaga ugotoviti pot klicev do napake?
+- Odgovor: Okno Frames (sklad klicev) prikazuje trenutni seznam aktivnih klicev metod, ki so pripeljali do trenutne točke zaustavitve. Pomaga nam slediti poti izvajanja od začetnega dogodka (npr. klika gumba) do mesta napake.
+
+5. Kaj prikazuje Variables in kaj omogoča Watches?
+- Odgovor: Okno Variables prikazuje vse lokalne spremenljivke, parametre in objekte v trenutnem obsegu ter njihove vrednosti. Watches omogoča dodajanje in stalno spremljanje poljubnih izrazov ali spremenljivk skozi celoten postopek razhroščevanja.
+
+6. Kako deluje pogoj (operandOne == 42) || (operandTwo == 42)?
+- Odgovor: To je logični pogoj (OR), ki vrne true, če je vsaj eden od operandov enak 42. Program se bo na prekinitveni točki ustavil le takrat, ko bo ta pogoj izpolnjen.
+
+7. Kako lahko med razhroščevanjem spremenite vrednost spremenljivke brez spremembe vhodnega polja?
+- Odgovor: V oknu Variables z desnim klikom na spremenljivko izberemo Set Value (ali pritisnemo F2) in vnesemo novo vrednost. S tem se vrednost spremeni v pomnilniku za nadaljnje izvajanje brez vnosa v aplikaciji.
+
+8. Za kaj uporabite Evaluate Expression in kakšna je nevarnost klicanja metod s stranskimi učinki?
+- Odgovor: Evaluate Expression uporabljamo za izračun in vrednotenje poljubnih izrazov ter preverjanje stanja med premorom. Nevarnost metod s stranskimi učinki je v tem, da lahko spremenijo stanje aplikacije ali podatkov, kar vpliva na nadaljnje delovanje programa.
+
+9. Zakaj pretvorba praznega niza v število lahko povzroči NumberFormatException?
+- Odgovor: Metode za parsiranje števil (kot je Double.valueOf) pričakujejo veljaven številski zapis. Prazen niz ali neveljavni znaki povzročijo, da pretvorba ni mogoča, zato sistem vrže NumberFormatException.
+
+10. Kakšno je vedenje deljenja z 0 pri tipu double in zakaj se lahko razlikuje od celoštevilskega deljenja?
+- Odgovor: Pri tipu double deljenje z 0 vrne Infinity (ali NaN), kar je določeno s standardom IEEE 754 za plavajočo vejico. Pri celoštevilskem deljenju (int / int) pa deljenje z 0 sproži izjemo ArithmeticException.
